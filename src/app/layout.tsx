@@ -26,7 +26,6 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       'https://res.cloudinary.com/dazt6g3o1/image/upload/v1706460476/onmkzee3qpo7zs7hwxpl.png',
-      'https://res.cloudinary.com/dazt6g3o1/image/upload/v1706460658/pzqbwr6z2gppfhnzifv0.png',
     ],
   },
 };
