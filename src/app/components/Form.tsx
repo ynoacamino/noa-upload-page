@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { FormEventHandler, Dispatch, SetStateAction } from 'react';
-import Image from 'next/image';
 import LinkResponse from './LinkResponse';
+import DragAndDrop from './DragAndDrop';
 
 export default function Form(
   { file, setFile, setUrl } : {
@@ -49,27 +49,7 @@ export default function Form(
             </button>
           </>
         ) : (
-          <label id='drop-area' className='hover:cursor-pointer'>
-            <div id="img-view" className='flex flex-col justify-center items-center p-4 gap-4'>
-              <Image
-                width={150}
-                height={150}
-                alt=''
-                src='./cloud.svg'
-              />
-              <p className='font-bold text-zinc-700'>Arrastra y suelta la imagen a subir o haz click para escoger</p>
-            </div>
-            <input
-              type="file"
-              style={{ display: 'none' }}
-              onChange={(e) => {
-                const currentFile = e.target.files;
-                if (currentFile) {
-                  setFile(currentFile[0]);
-                }
-              }}
-            />
-          </label>
+          <DragAndDrop setFile={setFile}/>
         )
       }
     </form>
