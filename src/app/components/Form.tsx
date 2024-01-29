@@ -45,7 +45,7 @@ export default function Form(
   return (
     <form
       onSubmit={handdleSubmit}
-      className='w-full flex flex-col justify-between items-center h-full'
+      className='w-full flex flex-col justify-between items-center'
     >
       <h1 className='uppercase font-extrabold text-6xl text-center mb-10'>
         Sube tu archivo
