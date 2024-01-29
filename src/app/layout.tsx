@@ -5,6 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://noa-upload-page.vercel.app/'),
   title: 'Noa Upload',
   description: 'Sube cualquier archivo y recive un link inmediato para compartirlo, sin cuentas ni anuncios',
   robots: {
