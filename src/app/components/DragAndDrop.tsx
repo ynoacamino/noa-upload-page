@@ -44,6 +44,7 @@ export default function DragAndDrop({ setFile } : {
         type="file"
         style={{ display: 'none' }}
         onChange={handdleChange}
+        multiple={false}
       />
     </label>
   );
