@@ -9,6 +9,9 @@
 # testing
 /coverage
 
+package-lock.json
+pnpm-lock.yaml
+
 # next.js
 /.next/
 /out/
